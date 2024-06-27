@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "aicm-turing"
+version = "0.1.0"
+description = ""
+authors = ["Natanael Delatorre Junior <del0003n@belgium.fhm.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.35.0"
+watchdog = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
