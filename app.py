@@ -39,7 +39,7 @@ st.markdown(
     f"### Who wrote this thematic description for *{st.session_state[CHALLENGE]['format']}* ?"
 )
 
-st.markdown(f"# {st.session_state[CHALLENGE]['description']}")
+st.markdown(f"## {st.session_state[CHALLENGE]['description']}")
 st.markdown("---")
 
 
@@ -71,7 +71,7 @@ if st.session_state.get(USER_CHOICE):
         st.toast("You are correct!")
         st.balloons()
     else:
-        st.toast("Ops, try again")
+        st.toast("Oops, try again with the next one")
 
     _, _, footer_column, _, _ = st.columns(5)
 
