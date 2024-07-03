@@ -44,20 +44,18 @@ st.markdown("---")
 
 
 # ==================================== BODY
-_, left_column, _, right_column, _ = st.columns(5)
+_, mid_column, _ = st.columns(3)
 
-
-with left_column:
-    st.button(
-        AI_EMOTICON,
-        on_click=lambda: set_user_choice(AI),
-        disabled=st.session_state[ARE_CHOICES_DISABLED],
-    )
-
-with right_column:
+with mid_column:
     st.button(
         HUMAN_EMOTICON,
         on_click=lambda: set_user_choice(HUMAN),
+        disabled=st.session_state[ARE_CHOICES_DISABLED],
+    )
+
+    st.button(
+        AI_EMOTICON,
+        on_click=lambda: set_user_choice(AI),
         disabled=st.session_state[ARE_CHOICES_DISABLED],
     )
 

@@ -1,5 +1,5 @@
-HUMAN_EMOTICON = "😀"
-AI_EMOTICON = "🤖"
+HUMAN_EMOTICON = "😀 Human"
+AI_EMOTICON = "🤖 AI"
 
 HUMAN = "human"
 AI = "ai"
